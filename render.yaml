@@ -2,9 +2,9 @@ services:
   - type: web
     name: telegram-echo-bot
     env: python
+    pythonVersion: 3.10
     buildCommand: ""
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
         sync: false
-    pythonVersion: 3.10
